@@ -5,16 +5,16 @@ const create = z.object({
     year: z.number({
       required_error: 'Year is required',
     }),
-    title: z.number({
+    title: z.string({
       required_error: 'Title is required',
     }),
-    code: z.number({
+    code: z.string({
       required_error: 'Code is required',
     }),
-    startMonth: z.number({
+    startMonth: z.string({
       required_error: 'Start Month is required',
     }),
-    endMonth: z.number({
+    endMonth: z.string({
       required_error: 'End Month is required',
     }),
   }),
