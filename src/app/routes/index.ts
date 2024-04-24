@@ -1,12 +1,13 @@
 import express from 'express';
+import { AcademicSemesterRoutes } from '../modules/academicSemester/academicSemester.route';
 
 const router = express.Router();
 
 const moduleRoutes = [
   // ... routes
   {
-    path: '/',
-    routes: express.Router(), // Create a new router instance for each route
+    path: '/academic-semesters',
+    routes: AcademicSemesterRoutes,
   },
 ];
 
